@@ -1,0 +1,12 @@
+spring:
+  tcms-datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://10.246.203.100:3306/TCMS?characterEncoding=utf8
+    username: root
+    password: zooin1234!
+    pool-name: tcms-db-pool
+    connection-test-query: SELECT NOW() FROM dual
+    idle-timeout: 40000
+    max-lifetime: 45000
+    minimum-idle: 3
+    maximum-pool-size: 10
